@@ -25,7 +25,7 @@ const loginUser = async (req , res) =>{
  if (email === "" || password === "") {
   throw new BadRequest('Please provide all values')
  }
- const user = await userModel.findOne({email})
+ const user = await userModel.findOne({email}).select('+password')
  if (!user) {
   throw new BadRequest('Invalid Credentials')
  }
