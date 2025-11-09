@@ -19,7 +19,7 @@ const getTeams = require('./routes/selectClub')
 
 const app = express();
 app.use(cors({
-  origin: "https://zingy-kringle-b76d66.netlify.app/", // your React app's URL
+  origin: "https://fantastic-smakager-012d7c.netlify.app", // your React app's URL
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true, // allows cookies or Authorization header
@@ -52,7 +52,7 @@ const startServer = async () => {
     //  Set up Socket.IO
     const io = new Server(server, {
       cors: {
-        origin: 'https://zingy-kringle-b76d66.netlify.app/', 
+        origin : "https://fantastic-smakager-012d7c.netlify.app",
         methods: ['GET', 'POST'],
       },
     });
