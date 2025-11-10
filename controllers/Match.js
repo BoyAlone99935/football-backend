@@ -1,7 +1,7 @@
 const axios = require("axios");
 require("dotenv").config();
 const NodeCache = require('node-cache');
-const cache = new NodeCache({ stdTTL: 180}); // cache for 1 minute
+const cache = new NodeCache({ stdTTL: 600}); // cache for 1 minute
 
 const API_KEY = process.env.API_KEY;
 const BASE_URL = "https://v3.football.api-sports.io";
