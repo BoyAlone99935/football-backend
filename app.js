@@ -19,7 +19,7 @@ const getTeams = require('./routes/selectClub')
 
 const app = express();
 app.use(cors({
-  origin: "https://dulcet-figolla-9bf780.netlify.app/", // your React app's URL
+  origin: "https://dulcet-figolla-9bf780.netlify.app", // your React app's URL
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true, // allows cookies or Authorization header
